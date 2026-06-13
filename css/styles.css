@@ -73,6 +73,7 @@ body {
     cursor: pointer;
     min-width: 150px;
     height: 38px;
+
 }
 
 /* End Navigation Style */
@@ -435,7 +436,7 @@ body {
     font-weight: 300;
     padding: 8px 20px;
     font-size: 16px;
-    min-width: 350px;
+    width: 100%;
     max-width: 350px;
     height: 50px;
 }
@@ -719,6 +720,8 @@ body {
     .nav-btn {
         width: 500px;
         margin-bottom: 1rem;
+        width: 100%;
+        max-width: 300px;
 
     }
 
@@ -770,6 +773,14 @@ body {
         margin: 0 auto;
         padding: 0 clamp(1rem, 5vw, 10em);
     }
+     .cash-included-parent button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .nav-logo {
+        margin-right: 0;
+    }
 
     .nav-logo {
         display: flex;
@@ -787,6 +798,8 @@ body {
     .nav-btn {
         width: 300px;
         margin-bottom: 1rem;
+        width: 100%;
+        max-width: 300px;
 
     }
 
@@ -844,23 +857,26 @@ body {
     }
 
     .get-your-card p {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    padding: 1rem;
-}
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        padding: 1rem;
+    }
 
     /* end styles for card section */
-}
 
-/* Footer */
+    /* Footer */
 
 .hide-column {
     display: none;
 }
 
-.hide{
+.hide {
     display: none;
 }
+
 /* End Footer */
+}
+
+
 
 /*  End Media Queries For Mobile */
