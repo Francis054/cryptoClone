@@ -837,12 +837,30 @@ body {
     /* <!-- End Second Navigation Bar Style --> */
 
     /* Styles for card section */
-    .card-section-h1-div{
+    .card-section-h1-div {
         text-align: center;
         font-weight: 200;
         font-size: 1em;
     }
+
+    .get-your-card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
     /* end styles for card section */
 }
+
+/* Footer */
+
+.hide-column {
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+/* End Footer */
 
 /*  End Media Queries For Mobile */
