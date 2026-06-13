@@ -4,7 +4,6 @@ body {
     color: #fff;
     margin: 0;
     width: 100%;
-
     overflow-x: hidden;
     font-family: "DM Sans", "DM Sans Fallback", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -18,7 +17,9 @@ body {
     background-color: rgb(32, 32, 36);
     min-height: 100px;
     font-size: 16px;
-    width: 100vw;
+    width: 100%;       
+    max-width: 100%;   
+    box-sizing: border-box;  
     margin: 0 auto;
     padding: 0 clamp(1rem, 5vw, 10em);
 }
@@ -73,7 +74,6 @@ body {
     cursor: pointer;
     min-width: 150px;
     height: 38px;
-
 }
 
 /* End Navigation Style */
@@ -86,11 +86,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* 🔑 safer than fixed height */
     min-height: 500px;
     padding: 2rem 1rem;
     text-align: center;
+    box-sizing: border-box;  
+    width: 100%;             
 }
 
 .carousel h1 {
@@ -124,7 +124,7 @@ body {
 /* End Carousel Style */
 
 
-/* <!-- Second Navigation Bar Style --> */
+/* Second Navigation Bar Style */
 
 .second-nav {
     display: flex;
@@ -132,8 +132,11 @@ body {
     align-items: center;
     background-color: rgb(114, 97, 72);
     width: 100%;
+    box-sizing: border-box;  
     font-size: 14px;
     gap: 65px;
+    flex-wrap: wrap;         
+    padding: 10px 20px;      
 }
 
 .second-nav>* {
@@ -203,10 +206,8 @@ body {
     height: 40px;
 }
 
-/* <!-- End Second Navigation Bar Style --> */
+/* End Second Navigation Bar Style */
 
-
-/* Perfect style for the crypto card */
 
 /* Style for title */
 
@@ -228,6 +229,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 clamp(1rem, 5vw, 10em);
+    box-sizing: border-box;  
 }
 
 .crypto-card {
@@ -244,6 +246,8 @@ body {
     border: 1px solid rgb(72, 72, 76);
     background-color: rgb(0, 0, 0);
     margin-bottom: 20px;
+    box-sizing: border-box;  
+    min-width: 0;            
 }
 
 .crypto-card>* h2 {
@@ -265,10 +269,12 @@ body {
     font-size: 0.9em;
     background-color: rgb(37, 36, 36);
     padding: 8px;
+    box-sizing: border-box;  
 }
 
 .crypto-table-row>* {
     flex: 1;
+    min-width: 0;  
 }
 
 .crypto-table-row-img {
@@ -303,6 +309,8 @@ body {
     gap: 50px;
     flex-wrap: wrap;
     padding: 0 20px;
+    box-sizing: border-box;  
+    width: 100%;             
 }
 
 .payment-title>h2 {
@@ -348,7 +356,7 @@ body {
 /* End of Get the App Section Style */
 
 
-/* style for  Corporate Section   */
+/* Corporate Section */
 .corporate-parent {
     display: flex;
     justify-content: center;
@@ -394,10 +402,9 @@ body {
     height: auto;
 }
 
+/* End Corporate Section */
 
-/* end of Corporate Section Style */
-
-/* Cash is included Section Style */
+/* Cash is included Section */
 .cash-included-parent {
     display: flex;
     flex-direction: column;
@@ -447,12 +454,9 @@ body {
     color: rgb(40, 185, 92);
 }
 
+/* End Cash is included Section */
 
-/* end of Cash is included Section Style */
-
-/* Table Section Style 1 */
-/* Table Section Style 2 */
-/* Table Section Style 3 */
+/* Table Sections */
 .table-parent {
     display: flex;
     flex-direction: column;
@@ -460,12 +464,14 @@ body {
     width: 100%;
     margin: 0px auto;
     background-color: rgb(11, 11, 13);
+    overflow-x: hidden;  
 }
 
 .table-row {
     display: flex;
     justify-content: space-evenly;
     border-bottom: rgba(84, 5, 158, 0.418) 1px solid;
+    flex-wrap: wrap;     
 }
 
 .table-row:first-child {
@@ -484,6 +490,8 @@ body {
     flex: 1;
     padding: 20px;
     width: 100px;
+    min-width: 0;              
+    box-sizing: border-box;    
     background-color: rgb(11, 11, 13);
 }
 
@@ -501,6 +509,7 @@ body {
     height: 100px;
     border-radius: 10px;
     margin-bottom: 10px;
+    max-width: 100%;   
 }
 
 .table-inner-card h2 {
@@ -521,6 +530,7 @@ body {
     margin-bottom: 30px;
     border-bottom: 1px solid rgb(56, 49, 49);
     padding: 0 15px;
+    flex-wrap: wrap;   
 }
 
 .highlights-row:hover {
@@ -547,13 +557,10 @@ body {
     align-items: center;
 }
 
-
-/* End Table Section Style 1 */
-/* End Table Section Style 2 */
-/* End Table Section Style 3 */
+/* End Table Sections */
 
 
-/* Membership button  */
+/* Membership button */
 
 .membership-btn {
     background-color: inherit;
@@ -574,9 +581,9 @@ body {
     background-color: #000;
 }
 
-/* End Membership button  */
+/* End Membership button */
 
-/* Style Get your Card Today Section */
+/* Get your Card Today Section */
 .get-your-card {
     display: flex;
     flex-direction: column;
@@ -588,13 +595,15 @@ body {
     margin-top: 100px;
     height: 350px;
     width: 100%;
-
+    box-sizing: border-box;  
+    padding: 0 20px;         
 }
 
 .get-your-card h2 {
     font-size: 2.7em;
     font-weight: 500;
     color: rgb(204, 170, 119);
+    text-align: center;  
 }
 
 .get-your-card button {
@@ -616,10 +625,10 @@ body {
     color: rgb(200, 200, 200);
 }
 
-/* End Style Get your Card Today Section  */
+/* End Get your Card Today Section */
 
 
-/* Style Footer Section */
+/* Footer Section */
 
 .footer-parent {
     display: flex;
@@ -628,21 +637,21 @@ body {
     background-color: rgb(17, 17, 21);
     padding-top: 30px;
     width: 100%;
-
+    box-sizing: border-box;  
+    overflow-x: hidden;      
 }
 
 .footer-parent> :first-child img {
     width: 50px;
     height: 50px;
     margin: 0.5em;
-
 }
 
 .footer-table-parent {
     text-align: left;
     width: 75%;
     border-spacing: 10px 15px;
-
+    max-width: 100%;         
 }
 
 .footer-table-parent td {
@@ -664,12 +673,13 @@ body {
     width: 74%;
     border-top: rgb(72, 72, 76) 1px solid;
     border-bottom: rgb(72, 72, 76) 1px solid;
+    flex-wrap: wrap;         
+    box-sizing: border-box;  
 }
 
 .sub-section-1>div {
     display: flex;
     align-items: center;
-
 }
 
 .sub-section-1 ul {
@@ -677,6 +687,7 @@ body {
     gap: 1em;
     margin: 0.5em;
     list-style: none;
+    flex-wrap: wrap;  
 }
 
 .sub-section-img {
@@ -688,15 +699,14 @@ body {
 .sub-section-2 {
     width: 70%;
     color: #7a6c6c;
+    box-sizing: border-box;  /* FIX */
 }
 
-/* end  Style Footer Section */
+/* End Footer Section */
 
 /* Media Queries For Tablet */
 
 @media (max-width: 1025px) {
-
-    /* Navigation Style */
 
     .crypto-nav {
         display: flex;
@@ -708,28 +718,18 @@ body {
         align-items: center;
         gap: 0.5em;
         margin-top: 1rem;
-        margin-right: 30rem;
+        margin-right: 0;    
     }
-
 
     .nav--menu-items {
         flex-direction: column;
-
     }
 
     .nav-btn {
-        width: 500px;
         margin-bottom: 1rem;
         width: 100%;
         max-width: 300px;
-
     }
-
-    /* End Navigation Style */
-
-
-
-    /* <!-- Second Navigation Bar Style --> */
 
     .second-nav {
         flex-direction: column;
@@ -745,21 +745,16 @@ body {
         display: flex;
         gap: 200px;
         align-items: center;
+        flex-wrap: wrap;  
     }
-
-    /* <!-- End Second Navigation Bar Style --> */
-
-
 }
 
-/*  End Media Queries For Tablet */
+/* End Media Queries For Tablet */
 
 
 
 /* Media Queries For Mobile */
 @media (max-width: 768px) {
-
-    /* Navigation Style */
 
     .crypto-nav {
         display: flex;
@@ -769,17 +764,16 @@ body {
         background-color: rgb(3, 3, 12);
         min-height: 100px;
         font-size: 16px;
-        width: 100vw;
+        width: 100%;           
+        max-width: 100%;       
+        box-sizing: border-box;
         margin: 0 auto;
-        padding: 0 clamp(1rem, 5vw, 10em);
-    }
-     .cash-included-parent button {
-        width: 100%;
-        max-width: 350px;
+        padding: 0 1rem;       
     }
 
-    .nav-logo {
-        margin-right: 0;
+    .cash-included-parent button {
+        width: 100%;
+        max-width: 350px;
     }
 
     .nav-logo {
@@ -787,30 +781,23 @@ body {
         align-items: center;
         gap: 0.5em;
         margin-top: 1rem;
-        margin-right: 15rem;
+        margin-right: 0;  
     }
 
     .nav--menu-items {
         flex-direction: column;
-
     }
 
     .nav-btn {
-        width: 300px;
         margin-bottom: 1rem;
         width: 100%;
         max-width: 300px;
-
     }
-
-    /* End Navigation Style */
-    /* <!-- Second Navigation Bar Style --> */
 
     .second-nav-item-1 {
         display: flex;
         margin-top: 2.5rem;
         flex-direction: column;
-
     }
 
     .second-nav-item-2 {
@@ -844,12 +831,9 @@ body {
         display: flex;
         gap: 50px;
         align-items: center;
-
+        flex-wrap: wrap;  
     }
 
-    /* <!-- End Second Navigation Bar Style --> */
-
-    /* Styles for card section */
     .card-section-h1-div {
         text-align: center;
         font-weight: 200;
@@ -862,21 +846,40 @@ body {
         padding: 1rem;
     }
 
-    /* end styles for card section */
+    
+    .membership-btn {
+        min-width: unset;
+        max-width: 100%;
+        width: 90%;
+    }
+
+    
+    .crypto {
+        width: 100%;
+        padding: 0 1rem;
+    }
 
     /* Footer */
+    .hide-column {
+        display: none;
+    }
 
-.hide-column {
-    display: none;
+    .hide {
+        display: none;
+    }
+
+    .footer-table-parent {
+        width: 90%;
+    }
+
+    .sub-section-1 {
+        width: 90%;
+    }
+
+    .sub-section-2 {
+        width: 90%;
+    }
+    /* End Footer */
 }
 
-.hide {
-    display: none;
-}
-
-/* End Footer */
-}
-
-
-
-/*  End Media Queries For Mobile */
+/* End Media Queries For Mobile */
