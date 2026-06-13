@@ -1,0 +1,46 @@
+.container {
+    padding: 5em 10em 0 10em;
+}
+
+/* Styles Grid */
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "card-1 card-2 card-3"
+        "card-1 card-5 card-3"
+        "card-4 card-5 card-6";
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: rgb(11, 53, 178);
+
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+.card-5 {
+    grid-area: card-5;
+}
+
+.card-6 {
+    grid-area: card-6;
+}
+
+/* End Style Grid */

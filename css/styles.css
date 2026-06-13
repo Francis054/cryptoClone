@@ -1,0 +1,848 @@
+body {
+    padding: 0;
+    background-color: rgb(23, 23, 26);
+    color: #fff;
+    margin: 0;
+    width: 100%;
+
+    overflow-x: hidden;
+    font-family: "DM Sans", "DM Sans Fallback", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Style */
+
+.crypto-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 32, 36);
+    min-height: 100px;
+    font-size: 16px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 10em);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nav-logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+#nav-logo-text {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
+
+.nav--menu-items {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav--menu-items li {
+    font-size: 1.2em;
+    font-weight: 450;
+}
+
+.nav--menu-items a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav--menu-items li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    margin: 8px 60px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 150px;
+    height: 38px;
+}
+
+/* End Navigation Style */
+
+
+/* Carousel Style */
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* 🔑 safer than fixed height */
+    min-height: 500px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.carousel h1 {
+    font-size: clamp(2.2em, 5vw, 3.9em);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.carousel span {
+    display: inline-block;
+    padding-left: clamp(0.5rem, 3vw, 80px);
+}
+
+.carousel p {
+    font-weight: 700;
+}
+
+.carousel-btn {
+    margin-top: 30px;
+    background-color: rgb(204, 170, 119);
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 8px 20px;
+    font-size: 14px;
+    min-width: 150px;
+    height: 38px;
+}
+
+/* End Carousel Style */
+
+
+/* <!-- Second Navigation Bar Style --> */
+
+.second-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(114, 97, 72);
+    width: 100%;
+    font-size: 14px;
+    gap: 65px;
+}
+
+.second-nav>* {
+    background-color: inherit;
+    font-size: larger;
+}
+
+.second-nav-item-1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.second-nav-image1 {
+    width: 30px;
+    height: 30px;
+}
+
+.second-nav-item-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-nav-item-2 h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.second-nav-item-3 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+}
+
+.second-nav-item-3 p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.second-nav-item-3-image-sub {
+    display: flex;
+    align-items: center;
+}
+
+.second-nav-item-3-image-sub2 {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-top: -30px;
+}
+
+.second-nav-item-3-image {
+    width: 15px;
+    height: 15px;
+}
+
+.second-nav-item-4 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.second-nav-image4 {
+    width: 40px;
+    height: 40px;
+}
+
+/* <!-- End Second Navigation Bar Style --> */
+
+
+/* Perfect style for the crypto card */
+
+/* Style for title */
+
+.card-section-h1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0;
+    color: rgb(204, 170, 119);
+    font-size: 1.3em;
+}
+
+/* End Style for title */
+
+.crypto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 10em);
+}
+
+.crypto-card {
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.crypto-card>* {
+    flex: 1 1 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(72, 72, 76);
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.crypto-card>* h2 {
+    color: rgb(204, 170, 119);
+}
+
+.crypto-table {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.crypto-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: rgb(37, 36, 36);
+    padding: 8px;
+}
+
+.crypto-table-row>* {
+    flex: 1;
+}
+
+.crypto-table-row-img {
+    width: 25px;
+    height: 25px;
+}
+
+.card-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-3>img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* End of crypto card style */
+
+
+/* Get the App Section Style */
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.payment-title>h2 {
+    font-size: 3em;
+    font-weight: 500;
+    color: rgb(204, 170, 119);
+    text-align: center;
+}
+
+.payment-options {
+    display: flex;
+    gap: clamp(0.5rem, 3vw, 15px);
+    flex-wrap: wrap;
+}
+
+.payment-options-btn button {
+    background-color: transparent;
+    border: rgb(72, 72, 76) 1px solid;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    width: 150px;
+    height: 55px;
+    margin-top: 25px;
+}
+
+.payment-options-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.add-to-wallet-img>div img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+/* End of Get the App Section Style */
+
+
+/* style for  Corporate Section   */
+.corporate-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: left;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.corporate-parent>* h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: rgb(204, 170, 119);
+}
+
+.corporate-parent>* p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.corporate-parent>* button {
+    background-color: rgb(71, 66, 118);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 8px 20px;
+    font-size: 16px;
+    min-width: 150px;
+    max-width: 200px;
+    height: 50px;
+}
+
+.corporate-image {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+
+/* end of Corporate Section Style */
+
+/* Cash is included Section Style */
+.cash-included-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cash-included-parent h2 {
+    font-size: 2.8em;
+    font-weight: 500;
+    color: rgb(204, 170, 119);
+}
+
+.cash-included-parent p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.cash-included-parent p span {
+    font-size: 0.9em;
+    color: rgb(200, 200, 200);
+}
+
+.cash-included-parent button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 8px 20px;
+    font-size: 16px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 50px;
+}
+
+.cash-included-parent strong {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: rgb(40, 185, 92);
+}
+
+
+/* end of Cash is included Section Style */
+
+/* Table Section Style 1 */
+/* Table Section Style 2 */
+/* Table Section Style 3 */
+.table-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(11, 11, 13);
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: rgba(84, 5, 158, 0.418) 1px solid;
+}
+
+.table-row:first-child {
+    border-bottom: none;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 20px;
+    width: 100px;
+    background-color: rgb(11, 11, 13);
+}
+
+.table-row:first-child:hover {
+    background-color: inherit;
+}
+
+.table-row:hover {
+    transition-duration: 0.2s;
+    background-color: #504b4b;
+}
+
+.table-inner-card img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.table-inner-card h2 {
+    font-size: 1.5em;
+    color: rgb(204, 170, 119);
+    margin: 0;
+}
+
+.table-inner-card p {
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+    color: rgb(200, 200, 200);
+}
+
+.highlights-row {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(56, 49, 49);
+    padding: 0 15px;
+}
+
+.highlights-row:hover {
+    transition-duration: 0.2s;
+    background-color: #504b4b;
+}
+
+.highlights-row h2 {
+    font-size: 1.5em;
+    color: rgb(204, 170, 119);
+}
+
+.table-inner-card h3 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: -7px;
+}
+
+.separate-table {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* End Table Section Style 1 */
+/* End Table Section Style 2 */
+/* End Table Section Style 3 */
+
+
+/* Membership button  */
+
+.membership-btn {
+    background-color: inherit;
+    color: #fff;
+    border: #7a6c6c 1px solid;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 8px 20px;
+    font-size: 14px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 45px;
+    margin-top: 1.3em;
+}
+
+.membership-btn:hover {
+    transition-duration: 1s;
+    background-color: #000;
+}
+
+/* End Membership button  */
+
+/* Style Get your Card Today Section */
+.get-your-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 31, 33);
+    border-top: #504b4b 0.8px solid;
+    border-bottom: #504b4b 0.8px solid;
+    margin-top: 100px;
+    height: 350px;
+    width: 100%;
+
+}
+
+.get-your-card h2 {
+    font-size: 2.7em;
+    font-weight: 500;
+    color: rgb(204, 170, 119);
+}
+
+.get-your-card button {
+    background-color: rgb(71, 66, 118);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    padding: 8px 20px;
+    font-size: 14px;
+    min-width: 150px;
+    height: 45px;
+    margin-top: 1.3em;
+}
+
+.get-your-card p {
+    font-size: 0.8em;
+    margin: 50px 0;
+    color: rgb(200, 200, 200);
+}
+
+/* End Style Get your Card Today Section  */
+
+
+/* Style Footer Section */
+
+.footer-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 17, 21);
+    padding-top: 30px;
+    width: 100%;
+
+}
+
+.footer-parent> :first-child img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em;
+
+}
+
+.footer-table-parent {
+    text-align: left;
+    width: 75%;
+    border-spacing: 10px 15px;
+
+}
+
+.footer-table-parent td {
+    font-size: 1em;
+    margin: 5px 0 0 0;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.footer-table-parent td:hover {
+    color: rgb(204, 170, 119);
+}
+
+.sub-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    width: 74%;
+    border-top: rgb(72, 72, 76) 1px solid;
+    border-bottom: rgb(72, 72, 76) 1px solid;
+}
+
+.sub-section-1>div {
+    display: flex;
+    align-items: center;
+
+}
+
+.sub-section-1 ul {
+    display: flex;
+    gap: 1em;
+    margin: 0.5em;
+    list-style: none;
+}
+
+.sub-section-img {
+    width: 25px;
+    height: 25px;
+    margin: 0 9px;
+}
+
+.sub-section-2 {
+    width: 70%;
+    color: #7a6c6c;
+}
+
+/* end  Style Footer Section */
+
+/* Media Queries For Tablet */
+
+@media (max-width: 1025px) {
+
+    /* Navigation Style */
+
+    .crypto-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-top: 1rem;
+        margin-right: 30rem;
+    }
+
+
+    .nav--menu-items {
+        flex-direction: column;
+
+    }
+
+    .nav-btn {
+        width: 500px;
+        margin-bottom: 1rem;
+
+    }
+
+    /* End Navigation Style */
+
+
+
+    /* <!-- Second Navigation Bar Style --> */
+
+    .second-nav {
+        flex-direction: column;
+    }
+
+    .second-nav-item-1 {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .second-nav-tablet-mobile {
+        display: flex;
+        gap: 200px;
+        align-items: center;
+    }
+
+    /* <!-- End Second Navigation Bar Style --> */
+
+
+}
+
+/*  End Media Queries For Tablet */
+
+
+
+/* Media Queries For Mobile */
+@media (max-width: 768px) {
+
+    /* Navigation Style */
+
+    .crypto-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(3, 3, 12);
+        min-height: 100px;
+        font-size: 16px;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0 clamp(1rem, 5vw, 10em);
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-top: 1rem;
+        margin-right: 15rem;
+    }
+
+    .nav--menu-items {
+        flex-direction: column;
+
+    }
+
+    .nav-btn {
+        width: 300px;
+        margin-bottom: 1rem;
+
+    }
+
+    /* End Navigation Style */
+    /* <!-- Second Navigation Bar Style --> */
+
+    .second-nav-item-1 {
+        display: flex;
+        margin-top: 2.5rem;
+        flex-direction: column;
+
+    }
+
+    .second-nav-item-2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .second-nav-item-2-mobile {
+        display: flex;
+        gap: 10px;
+        margin-bottom: -2rem;
+    }
+
+    .second-nav-item-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-nav-item-3> :first-child {
+        margin-bottom: -3.5rem;
+    }
+
+    .second-nav-item-4 {
+        display: flex;
+        gap: 1px;
+        flex-direction: column;
+    }
+
+    .second-nav-tablet-mobile {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+    }
+
+    /* <!-- End Second Navigation Bar Style --> */
+
+    /* Styles for card section */
+    .card-section-h1-div{
+        text-align: center;
+        font-weight: 200;
+        font-size: 1em;
+    }
+    /* end styles for card section */
+}
+
+/*  End Media Queries For Mobile */

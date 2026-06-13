@@ -1,0 +1,261 @@
+<!-- Parent Card -->
+<div class="card-section-cards-div">
+    <!-- Card 1 -->
+    <div class="card-menu-col-1">
+        <div class="card-menu-item-col-1-row-1">
+            <div class="padding-item">
+                <h2>Use your crypto</h2>
+                <p>Use your ether.fi crypto balance with <br />Cash to spend with your card. Repay <br /> anytime, no
+                    monthly minimums.
+                </p>
+            </div>
+            <img class="col-1-row-1-item-image" src="./images/eeth-golden.webp" alt="">
+        </div>
+        <!-- End of Card 1   -->
+        <div class="card-menu-item-col-1-row-2">
+            <div class="padding-item">
+                <h2>Cash Back on all purchases*</h2>
+                <p>Earn cashback instantly, anywhere you spend with your card—automatically added to your account!
+                </p>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div><img class="card-td-row-image" src="./images/Cafe_64px.png" alt=""></div>
+                        <div>Tim`s Café</div>
+                        <div>$12.00 USD</div>
+                        <div>$0.36</div>
+                    </div>
+                </div>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div>Tim`s Café</div>
+                        <div>$12.00 USD</div>
+                        <div>$0.36</div>
+                    </div>
+                </div>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div>FoodMard</div>
+                        <div>$12.00 USD</div>
+                        <div>$4.44</div>
+                    </div>
+                </div>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div>Andy`s Car Rental</div>
+                        <div>$840.00 USD</div>
+                        <div>$25.20</div>
+                    </div>
+                </div>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div>ether.fly</div>
+                        <div>$12.00 USD</div>
+                        <div>$85.26</div>
+                    </div>
+                </div>
+
+                <div class="card-table">
+                    <div class="card-td-row">
+                        <div>Streaming Service</div>
+                        <div>$12.00 USD</div>
+                        <div>$0.36</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card-menu-col-2">
+        <div class="card-menu-item-col-2-row-1">d</div>
+        <div class="card-menu-item-col-2-row-2">a</div>
+    </div>
+
+    <div class="card-menu-col-3">
+        <div class="card-menu-item-col-3-row-1">t</div>
+        <div class="card-menu-item-col-3-row-2">k</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- Cards Section Style --> */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    margin-bottom: 50px;
+}
+
+.card-section-h1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(204, 170, 119);
+}
+
+.card-section-h1-div {
+    font-size: 1.5em;
+}
+
+.card-section-cards-div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1350px;
+    height: 570px;
+    gap: 20px;
+
+}
+
+.card-menu-col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    gap: 20px;
+}
+
+.card-menu-col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    gap: 20px;
+}
+
+.card-menu-col-3 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    gap: 20px;
+}
+
+.card-menu-item-col-1-row-1 {
+    width: 100%;
+    height: 45%;
+    border-radius: 10px;
+    border: rgb(72, 72, 76) 1px solid;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.padding-item {
+    margin-left: 50px;
+}
+
+.padding-item h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: rgb(204, 170, 119);
+}
+
+.padding-item p {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+
+.col-1-row-1-item-image {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-top: -50px;
+
+}
+
+.card-menu-item-col-1-row-2 {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    border: rgb(72, 72, 76) 1px solid;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.card-table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+    width: 350px;
+}
+
+.card-td-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0px;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+
+.card-td-row-image {
+    width: 25px;
+    height: 25px;
+}
+
+.card-menu-item-col-2-row-1 {
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(236, 107, 196);
+}
+
+.card-menu-item-col-2-row-2 {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-menu-item-col-3-row-1 {
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    background-color: rgb(236, 214, 107);
+}
+
+.card-menu-item-col-3-row-2 {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: rgb(179, 107, 236);
+}
+
+/* <!-- End Cards Section Style --> */
