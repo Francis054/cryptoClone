@@ -950,6 +950,24 @@ body {
     .hamburger.open span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
+
+
+    /* removes mobile tap flash */
+    .nav--menu-items a,
+    .nav--menu-items a:focus,
+    .nav--menu-items a:active,
+    .nav--menu-items a:visited {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Remove focus ring on the whole nav too */
+    .crypto-nav *:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 /* End Media Queries For Tablet */
@@ -1241,6 +1259,23 @@ body {
         transform: translateY(-7px) rotate(-45deg);
     }
 
+
+    /* removes mobile tap flash */
+    .nav--menu-items a,
+    .nav--menu-items a:focus,
+    .nav--menu-items a:active,
+    .nav--menu-items a:visited {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Remove focus ring on the whole nav too */
+    .crypto-nav *:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 
