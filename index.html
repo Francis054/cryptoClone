@@ -16,24 +16,29 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="crypto-nav">
-    <div class="nav-logo">
-      <img class="nav-logo-image" src="./images/logo.png" alt="Logo" />
-      <span id="nav-logo-text">ether.fi</span>
-    </div>
-    <div class="nav-menu">
-      <ul class="nav--menu-items">
-        <li><a href="./index.html">Stake</a></li>
-        <li><a href="#">Cash</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">CssGrid</a></li>
-        <li><a href="#">Calculator</a></li>
-      </ul>
-    </div>
-    <div>
-      <button class="nav-btn">Open App</button>
-    </div>
-  </nav>
+ <nav class="crypto-nav">
+  <div class="nav-logo">
+    <img class="nav-logo-image" src="./images/logo.png" alt="Logo" />
+    <span id="nav-logo-text">ether.fi</span>
+  </div>
+
+  
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-menu">
+    <ul class="nav--menu-items">
+      <li><a href="https://www.ether.fi/stake">Stake</a></li>
+      <li><a href="./index.html">Cash</a></li>
+      <li><a href="https://www.ether.fi/liquid">Liquid</a></li>
+      <li><a href="https://www.ether.fi/the-club">The Club</a></li>
+      <li><a href="https://www.ether.fi/affiliates">Affiliates</a></li>
+    </ul>
+  </div>
+</nav>
 
 
   <!-- Carousel Section -->
@@ -42,7 +47,7 @@
       The best crypto credit card.<br /><span> Earn 3%-5% in crypto</span>
     </h1>
     <p>The non-custodial, cashback credit card you’ve been waiting for.</p>
-    <button class="carousel-btn">Get The Card</button>
+    <button class="carousel-btn"><a class="carousel-btn-a" href="https://www.ether.fi/app/cash/sign-up">Get The Card</a></button>
   </section>
 
   <!-- Second Navigation Bar -->
@@ -1257,6 +1262,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="./javascript/app.js"></script>
 </body>
 
 </html>
